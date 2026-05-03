@@ -1,43 +1,38 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const projects = [
   {
-    title: "Умный помощник по выборам",
-    category: "AI/ML и веб-разработка",
-    image: "/omgekeerdestemwijzer-banner.png",
+    title: "Коллекция «Премиум»",
+    category: "Игровая форма",
+    image: "https://cdn.poehali.dev/projects/76651da6-84c6-4262-bea9-78ec3029624e/files/4dace695-4661-449b-8a1b-957b5ca07884.jpg",
     description:
-      "AI-приложение для выборов. Пользователи задают вопросы о позициях партий и получают 100% фактические ответы из официальных программ с использованием RAG-технологии.",
-    url: "https://de-omgekeerde-stemwijzer.onrender.com/",
-    tags: ["Next.js", "AI/ML", "RAG", "TypeScript"],
+      "Флагманская линейка из дышащей ткани DryTech. Яркие цвета, точный крой, сублимационная печать — форма, которая выглядит профессионально.",
+    tags: ["DryTech", "Сублимация", "Индивидуальный дизайн"],
   },
   {
-    title: "Автомойка Tahsin",
-    category: "Веб-дизайн и разработка",
-    image: "/autopoetsbedrijf-tahsin-project.png",
+    title: "Форма для академии",
+    category: "Детская и юношеская форма",
+    image: "https://cdn.poehali.dev/projects/76651da6-84c6-4262-bea9-78ec3029624e/files/2e92fee6-bf88-4d93-9c25-530912cd4d0e.jpg",
     description:
-      "Профессиональный сайт для автомойки с 20-летним опытом. Полная презентация услуг, автомойки и гаража с современным адаптивным дизайном.",
-    url: "https://www.autopoetsbedrijftahsin.nl/",
-    tags: ["React", "Next.js", "Tailwind CSS"],
+      "Лёгкая и прочная форма для детских команд. Специальный крой для юных игроков, усиленные швы и безопасные материалы.",
+    tags: ["Детская линейка", "Прочный крой", "Безопасные ткани"],
   },
   {
-    title: "Кадровое агентство CAN",
-    category: "Веб-разработка",
-    image: "/can-uitzendbureau-project.png",
+    title: "Детали и качество",
+    category: "Производство",
+    image: "https://cdn.poehali.dev/projects/76651da6-84c6-4262-bea9-78ec3029624e/files/24c195d9-9765-4596-ab1c-ce32fd4d3ee5.jpg",
     description:
-      "Кадровое агентство с 30-летним опытом в садоводческом секторе. Сайт с обзором услуг и прямыми контактами для работодателей и соискателей.",
-    url: "https://canbv.nl/",
-    tags: ["Next.js", "React", "Tailwind CSS"],
+      "Вышитые эмблемы, номера и имена игроков. Каждый элемент формы проходит проверку качества перед отправкой.",
+    tags: ["Вышивка", "Нанесение номеров", "Контроль качества"],
   },
   {
-    title: "Портфолио Murat Sahin",
-    category: "Портфолио-сайт",
-    image: "/murat-sahin-portfolio.png",
+    title: "Вся линейка цветов",
+    category: "Каталог форм",
+    image: "https://cdn.poehali.dev/projects/76651da6-84c6-4262-bea9-78ec3029624e/files/7904b673-2510-4b38-b11d-3fe9b7ea38d2.jpg",
     description:
-      "Профессиональное портфолио full-stack разработчика. Демонстрация проектов, навыков и опыта с современным минималистичным дизайном и темной темой.",
-    url: "https://murat-sahin-dev.vercel.app/",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", ".NET Core"],
+      "Более 20 базовых цветов и бесконечные варианты сочетаний. Форма любого цвета под фирменный стиль вашего клуба.",
+    tags: ["20+ цветов", "Любые сочетания", "Фирменный стиль"],
   },
 ]
 
@@ -46,9 +41,9 @@ export function PortfolioSection() {
     <section id="portfolio" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">Наше портфолио</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">Наши коллекции</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Ознакомьтесь с подборкой наших последних проектов и узнайте, как мы помогаем бизнесу расти с помощью мощных цифровых решений.
+            Смотрите, что мы производим — от игровой формы для профессиональных клубов до детской экипировки для футбольных школ.
           </p>
         </div>
 
@@ -69,9 +64,9 @@ export function PortfolioSection() {
                     size="sm"
                     variant="secondary"
                     className="gap-2"
-                    onClick={() => window.open(project.url, "_blank")}
+                    onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                   >
-                    Открыть проект <ExternalLink className="h-4 w-4" />
+                    Заказать такую
                   </Button>
                 </div>
               </div>
