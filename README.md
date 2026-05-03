@@ -1,3 +1,7 @@
-# creative-canvas-experience
+# Лендинг веб-студии
 
-Initial repository setup for pr-poehali-dev/creative-canvas-experience
+![Preview](preview.png)
+
+Современный темный лендинг для веб-студии или digital-агентства. Включает hero-секцию с анимациями, услуги, портфолио работ, тарифы, отзывы клиентов и контактную форму. Идеален для демонстрации услуг разработки и привлечения новых клиентов.
+
+`"tags": ["landing", "dark", "agency", "portfolio", "pricing", "testimonials"]`
