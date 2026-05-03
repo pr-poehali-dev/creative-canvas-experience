@@ -36,6 +36,9 @@ export function Navbar() {
             <a href="#portfolio" className="text-sm font-medium hover:text-primary transition-colors">
               Коллекции
             </a>
+            <a href="#designs" className="text-sm font-medium hover:text-primary transition-colors">
+              Дизайны
+            </a>
             <a href="#pricing" className="text-sm font-medium hover:text-primary transition-colors">
               Цены
             </a>
